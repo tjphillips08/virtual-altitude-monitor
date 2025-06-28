@@ -7,6 +7,7 @@ set(CMAKE_C_STANDARD 99)
 # Source files
 add_executable(altitude_monitor
     src/main.c
+    src/barometer.c
 )
 
 # Include directory
