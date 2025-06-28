@@ -16,7 +16,6 @@ int main() {
     while (1) {
         float altitude = get_virtual_altitude();
 
-        // Fault detection
         bool fault = false;
         if (!first_reading) {
             float delta = last_altitude - altitude;
@@ -28,12 +27,13 @@ int main() {
         last_altitude = altitude;
         first_reading = false;
 
-        // Logging
+        // Tell CLI about fault status
+        cli_set_fault(fault);
+
         if (is_logging_enabled()) {
             logger_log(altitude, fault);
         }
 
-        // CLI
         if (cli_process(altitude)) {
             break;
         }

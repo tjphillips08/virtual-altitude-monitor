@@ -85,12 +85,12 @@ clean: CMakeFiles/altitude_monitor.dir/clean
 CMakeFiles/altitude_monitor.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/altitude_monitor.dir/build.make CMakeFiles/altitude_monitor.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/altitude_monitor.dir/build.make CMakeFiles/altitude_monitor.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/taylorphillips/virtual-altitude-monitor/build/CMakeFiles --progress-num=1,2,3,4 "Built target altitude_monitor"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/taylorphillips/virtual-altitude-monitor/build/CMakeFiles --progress-num=1,2,3,4,5 "Built target altitude_monitor"
 .PHONY : CMakeFiles/altitude_monitor.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/altitude_monitor.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/taylorphillips/virtual-altitude-monitor/build/CMakeFiles 4
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/taylorphillips/virtual-altitude-monitor/build/CMakeFiles 5
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/altitude_monitor.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/taylorphillips/virtual-altitude-monitor/build/CMakeFiles 0
 .PHONY : CMakeFiles/altitude_monitor.dir/rule
@@ -102,7 +102,7 @@ altitude_monitor: CMakeFiles/altitude_monitor.dir/rule
 # codegen rule for target.
 CMakeFiles/altitude_monitor.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/altitude_monitor.dir/build.make CMakeFiles/altitude_monitor.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/taylorphillips/virtual-altitude-monitor/build/CMakeFiles --progress-num=1,2,3,4 "Finished codegen for target altitude_monitor"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/taylorphillips/virtual-altitude-monitor/build/CMakeFiles --progress-num=1,2,3,4,5 "Finished codegen for target altitude_monitor"
 .PHONY : CMakeFiles/altitude_monitor.dir/codegen
 
 # clean rule for target.

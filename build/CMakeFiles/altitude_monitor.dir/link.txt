@@ -1,1 +1,1 @@
-/usr/bin/cc  -arch x86_64 -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/altitude_monitor.dir/src/main.c.o CMakeFiles/altitude_monitor.dir/src/barometer.c.o CMakeFiles/altitude_monitor.dir/src/cli.c.o -o altitude_monitor
+/usr/bin/cc  -arch x86_64 -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/altitude_monitor.dir/src/main.c.o CMakeFiles/altitude_monitor.dir/src/barometer.c.o CMakeFiles/altitude_monitor.dir/src/cli.c.o CMakeFiles/altitude_monitor.dir/src/logger.c.o -o altitude_monitor

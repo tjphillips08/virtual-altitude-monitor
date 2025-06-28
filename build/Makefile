@@ -177,6 +177,30 @@ src/cli.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/altitude_monitor.dir/build.make CMakeFiles/altitude_monitor.dir/src/cli.c.s
 .PHONY : src/cli.c.s
 
+src/logger.o: src/logger.c.o
+.PHONY : src/logger.o
+
+# target to build an object file
+src/logger.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/altitude_monitor.dir/build.make CMakeFiles/altitude_monitor.dir/src/logger.c.o
+.PHONY : src/logger.c.o
+
+src/logger.i: src/logger.c.i
+.PHONY : src/logger.i
+
+# target to preprocess a source file
+src/logger.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/altitude_monitor.dir/build.make CMakeFiles/altitude_monitor.dir/src/logger.c.i
+.PHONY : src/logger.c.i
+
+src/logger.s: src/logger.c.s
+.PHONY : src/logger.s
+
+# target to generate assembly for a file
+src/logger.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/altitude_monitor.dir/build.make CMakeFiles/altitude_monitor.dir/src/logger.c.s
+.PHONY : src/logger.c.s
+
 src/main.o: src/main.c.o
 .PHONY : src/main.o
 
@@ -216,6 +240,9 @@ help:
 	@echo "... src/cli.o"
 	@echo "... src/cli.i"
 	@echo "... src/cli.s"
+	@echo "... src/logger.o"
+	@echo "... src/logger.i"
+	@echo "... src/logger.s"
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"

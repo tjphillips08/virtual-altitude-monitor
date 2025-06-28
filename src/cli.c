@@ -5,16 +5,24 @@
 #include <ctype.h>
 
 static int logging_enabled = 0;
+static int fault_active = 0;
 
 void cli_init() {
-    printf("📟 CLI Interface Ready. Commands: STATUS, LOG ON, LOG OFF, EXIT\n");
+    printf("📟 CLI Interface Ready. Commands: STATUS, LOG ON, LOG OFF, FAULT, EXIT\n");
 }
 
-// Converts input to uppercase for easier parsing
 void to_upper(char *str) {
     for (; *str; ++str) {
         *str = toupper((unsigned char)*str);
     }
+}
+
+void cli_set_fault(int fault) {
+    fault_active = fault;
+}
+
+int cli_get_fault() {
+    return fault_active;
 }
 
 int cli_process(float current_altitude) {
@@ -35,16 +43,21 @@ int cli_process(float current_altitude) {
     } else if (strstr(input, "LOG OFF")) {
         logging_enabled = 0;
         printf("⛔ Logging disabled.\n");
+    } else if (strstr(input, "FAULT")) {
+        if (fault_active) {
+            printf("⚠️ Rapid descent fault currently active!\n");
+        } else {
+            printf("✅ No faults detected.\n");
+        }
     } else if (strstr(input, "EXIT")) {
         return 1;
     } else {
-        printf("❓ Unknown command. Try: STATUS, LOG ON, LOG OFF, EXIT\n");
+        printf("❓ Unknown command. Try: STATUS, LOG ON, LOG OFF, FAULT, EXIT\n");
     }
 
     return 0;
 }
 
-// Getter for logging state
 int is_logging_enabled() {
     return logging_enabled;
 }
