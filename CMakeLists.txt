@@ -9,6 +9,7 @@ add_executable(altitude_monitor
     src/main.c
     src/barometer.c
     src/cli.c
+    src/logger.c
 )
 
 # Include directory

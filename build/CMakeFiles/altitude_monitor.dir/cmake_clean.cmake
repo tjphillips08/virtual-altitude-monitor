@@ -1,6 +1,8 @@
 file(REMOVE_RECURSE
   "CMakeFiles/altitude_monitor.dir/src/barometer.c.o"
   "CMakeFiles/altitude_monitor.dir/src/barometer.c.o.d"
+  "CMakeFiles/altitude_monitor.dir/src/cli.c.o"
+  "CMakeFiles/altitude_monitor.dir/src/cli.c.o.d"
   "CMakeFiles/altitude_monitor.dir/src/main.c.o"
   "CMakeFiles/altitude_monitor.dir/src/main.c.o.d"
   "altitude_monitor"

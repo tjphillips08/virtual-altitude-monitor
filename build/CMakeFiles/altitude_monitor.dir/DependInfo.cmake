@@ -9,6 +9,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/Users/taylorphillips/virtual-altitude-monitor/src/barometer.c" "CMakeFiles/altitude_monitor.dir/src/barometer.c.o" "gcc" "CMakeFiles/altitude_monitor.dir/src/barometer.c.o.d"
+  "/Users/taylorphillips/virtual-altitude-monitor/src/cli.c" "CMakeFiles/altitude_monitor.dir/src/cli.c.o" "gcc" "CMakeFiles/altitude_monitor.dir/src/cli.c.o.d"
   "/Users/taylorphillips/virtual-altitude-monitor/src/main.c" "CMakeFiles/altitude_monitor.dir/src/main.c.o" "gcc" "CMakeFiles/altitude_monitor.dir/src/main.c.o.d"
   )
 

@@ -153,6 +153,30 @@ src/barometer.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/altitude_monitor.dir/build.make CMakeFiles/altitude_monitor.dir/src/barometer.c.s
 .PHONY : src/barometer.c.s
 
+src/cli.o: src/cli.c.o
+.PHONY : src/cli.o
+
+# target to build an object file
+src/cli.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/altitude_monitor.dir/build.make CMakeFiles/altitude_monitor.dir/src/cli.c.o
+.PHONY : src/cli.c.o
+
+src/cli.i: src/cli.c.i
+.PHONY : src/cli.i
+
+# target to preprocess a source file
+src/cli.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/altitude_monitor.dir/build.make CMakeFiles/altitude_monitor.dir/src/cli.c.i
+.PHONY : src/cli.c.i
+
+src/cli.s: src/cli.c.s
+.PHONY : src/cli.s
+
+# target to generate assembly for a file
+src/cli.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/altitude_monitor.dir/build.make CMakeFiles/altitude_monitor.dir/src/cli.c.s
+.PHONY : src/cli.c.s
+
 src/main.o: src/main.c.o
 .PHONY : src/main.o
 
@@ -189,6 +213,9 @@ help:
 	@echo "... src/barometer.o"
 	@echo "... src/barometer.i"
 	@echo "... src/barometer.s"
+	@echo "... src/cli.o"
+	@echo "... src/cli.i"
+	@echo "... src/cli.s"
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"
