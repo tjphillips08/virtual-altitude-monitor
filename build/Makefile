@@ -129,6 +129,30 @@ altitude_monitor/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/altitude_monitor.dir/build.make CMakeFiles/altitude_monitor.dir/build
 .PHONY : altitude_monitor/fast
 
+src/barometer.o: src/barometer.c.o
+.PHONY : src/barometer.o
+
+# target to build an object file
+src/barometer.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/altitude_monitor.dir/build.make CMakeFiles/altitude_monitor.dir/src/barometer.c.o
+.PHONY : src/barometer.c.o
+
+src/barometer.i: src/barometer.c.i
+.PHONY : src/barometer.i
+
+# target to preprocess a source file
+src/barometer.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/altitude_monitor.dir/build.make CMakeFiles/altitude_monitor.dir/src/barometer.c.i
+.PHONY : src/barometer.c.i
+
+src/barometer.s: src/barometer.c.s
+.PHONY : src/barometer.s
+
+# target to generate assembly for a file
+src/barometer.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/altitude_monitor.dir/build.make CMakeFiles/altitude_monitor.dir/src/barometer.c.s
+.PHONY : src/barometer.c.s
+
 src/main.o: src/main.c.o
 .PHONY : src/main.o
 
@@ -162,6 +186,9 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... altitude_monitor"
+	@echo "... src/barometer.o"
+	@echo "... src/barometer.i"
+	@echo "... src/barometer.s"
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"
