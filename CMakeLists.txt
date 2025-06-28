@@ -8,6 +8,7 @@ set(CMAKE_C_STANDARD 99)
 add_executable(altitude_monitor
     src/main.c
     src/barometer.c
+    src/cli.c
 )
 
 # Include directory
